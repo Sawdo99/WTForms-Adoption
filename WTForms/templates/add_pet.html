@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Add a Pet</h1>
+<form method="POST">
+  {{ form.hidden_tag() }}
+  {{ form.name.label }} {{ form.name }}
+  {{ form.species.label }} {{ form.species }}
+  {{ form.photo_url.label }} {{ form.photo_url }}
+  {{ form.age.label }} {{ form.age }}
+  {{ form.notes.label }} {{ form.notes }}
+  <button type="submit">Add Pet</button>
+</form>
+{% endblock %}
